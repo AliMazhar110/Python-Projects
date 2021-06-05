@@ -1,0 +1,35 @@
+question_data = [
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "easy",
+     "question": "French is an official language in Canada.", "correct_answer": "True",
+     "incorrect_answers": ["False"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "easy",
+     "question": "It is automatically considered entrapment in the United States if "
+                 "the police sell you illegal substances without revealing themselves.",
+     "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "medium",
+     "question": "There are 86400 seconds in a day.", "correct_answer": "True",
+     "incorrect_answers": ["False"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "easy",
+     "question": "In 2010, Twitter and the United States Library of Congress partnered together "
+                 "to archive every tweet by American citizens.",
+     "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "medium",
+     "question": "Sitting for more than three hours a day can cut two years off a person's life expectancy.",
+     "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "medium",
+     "question": "Albert Einstein had trouble with mathematics when he was in school.",
+     "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "medium",
+     "question": "Fast food restaurant chains Carl's Jr. and Hardee's are owned by the same company.",
+     "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "easy",
+     "question": "Dihydrogen Monoxide was banned due to health risks after being "
+                 "discovered in 1983 inside swimming pools and drinking water.",
+     "correct_answer": "False", "incorrect_answers": ["True"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "medium",
+     "question": "The British organisation CAMRA stands for The Campaign for Real Ale.",
+     "correct_answer": "True", "incorrect_answers": ["False"]},
+    {"category": "General Knowledge", "type": "boolean", "difficulty": "medium",
+     "question": "Instant mashed potatoes were invented by Canadian Edward Asselbergs in 1962.",
+     "correct_answer": "True", "incorrect_answers": ["False"]}
+]
