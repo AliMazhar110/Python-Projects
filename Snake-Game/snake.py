@@ -17,6 +17,14 @@ class Snake:
             self.turtles[seq_num].goto(self.turtles[seq_num - 1].pos())
         self.turtles[0].forward(20)
 
+    def go_home(self):
+        if len(self.turtles) > 3:
+            length = len(self.turtles) - 3
+            for i in range(length):
+                self.turtles[-1].hideturtle()
+                self.turtles.pop(-1)
+        self.turtles[0].goto(0, 0)
+
     def left(self):
         if self.turtles[0].heading() == 0:
             return

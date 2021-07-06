@@ -22,10 +22,11 @@ screen.onkey(turtles[0].down, "Down")
 screen.onkey(turtles[0].left, "Left")
 screen.onkey(turtles[0].right, "Right")
 
-game_is_on = True
-i = 1
+round_no = screen.numinput("Rounds", "Rounds You Want To Play: ", 3, minval=2, maxval=10)
+# taking high-score from data.txt
+score.set_score()
 
-while game_is_on:
+while round_no > 0:
     screen.update()
     time.sleep(0.1)
     turtles[0].move_forward()
@@ -39,19 +40,23 @@ while game_is_on:
 
     # detect collision with wall.
     if t.xcor() > 280 or t.xcor() < -280 or t.ycor() > 280 or t.ycor() < -280:
-        game_is_on = False
-        score.game_over()
+        if len(turtles) > 3:
+            length = len(turtles) - 3
+            for i in range(length):
+                turtles.pop(-1)
+        score.reset()
+        round_no -= 1
+        turtles[0].go_home()
 
     # detect collision with tail.
     for i in range(1, len(turtles)):
         if t.distance(turtles[0].send_turtle(i)) < 10:
-            game_is_on = False
-            score.game_over()
-
-    # if head collision with any segment in the tail:
-        # trigger game_over
-
-
-
-
+            if len(turtles) > 3:
+                length = len(turtles) - 3
+                for j in range(length):
+                    turtles.pop(-1)
+            score.reset()
+            round_no -= 1
+            turtles[0].go_home()
+score.game_over()
 screen.exitonclick()
