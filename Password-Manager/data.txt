@@ -1,0 +1,10 @@
+website | email | password
+1234 | 1234 | 1234
+stackoverflow.com | luqmani.mazhar.ali@gmail.com | 1234567890
+amazon | luqmani.mazhar.ali@gmail.com | 3456
+facebook | luqmani.mazhar.ali@gmail.com | 123456
+amazon | luqmani.mazhar.ali@gmail.com | 0987
+Facebook | luqmani.mazhar.ali@gmail.com | YXY34rZ!%G4z&igD*
+Amazon | luqmani.mazhar.ali@gmail.com | 735T#z$&#iHVwew
+StackOverFlow | luqmani.mazhar.ali@gmail.com | HbXg#(ySi(26a
+Wix.com | luqmani.mazhar.ali@gmail.com | 7(AH!o+%zvgrO4VL
