@@ -20,21 +20,24 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/[TomekK]
 *******************************************************************************
 ''')
+
 print("\nWelcome to Treasure Island.\nYour Mission is to find the treasure")
-str = input("Make a CHOICE, you can either take a 'right' or 'left' turn? ")
-if str=="left":
-    str = input("You could either 'swim' or 'wait' for boat to come? ")
-    if str == "wait":
-        str = input("Make a choice between 'red', 'blue' or 'yellow' doors? ")
-        if str=="yellow":
+
+st = input("Make a CHOICE, you can either take a 'right' or 'left' turn? ")
+
+if st == "left":
+    st = input("You could either 'swim' or 'wait' for boat to come? ")
+    if st == "wait":
+        st = input("Make a choice between 'red', 'blue' or 'yellow' doors? ")
+        if st == "yellow":
             print("You Win!")
-        elif str=="red":
+        elif st == "red":
             print("Burned by Fire!.\nGame Over.")
-        elif str=="blue":
+        elif st == "blue":
             print("Eaten by beasts.\nGame Over.")
         else:
             print("Game Over.")
     else:
         print("Attacked by trout.\nGame Over")
 else:
-    print("OPPS!!! You fall into a hole.\nGame Over.")
+    print("OOPS!!! You fall into a hole.\nGame Over.")
